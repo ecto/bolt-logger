@@ -27,6 +27,12 @@ options:
    -p, --port 6379          Specify redis server port
    -a, --auth pass          Authorize with redis server
 
+~ λ bolt-logge > bolt.log &
+
+~ λtail -f bolt.log
+
+~ λbolt-logger -d
+
 ````
 
 # license
