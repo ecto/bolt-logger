@@ -30,8 +30,13 @@ Options:
 ````bash
 
 ~ $ bolt-logger > bolt.log &
-
+[1] 16097
 ~ $ tail -f bolt.log
+{"blah":"blah"}
+{"blah":"blah"}
+~ $ fg
+{"blah":"blah"}
+{"blah":"blah"}
 ````
 
 ````bash
