@@ -15,23 +15,30 @@ NOPE
 # usage
 
 ````bash
-~ λ bolt-logger
 
-usage: bolt-logger <path> [options]
+~ $ bolt-logger
 
-path     file to log to (default: ./bolt.log)
+usage: bolt-logger [options]
 
-options:
-   -d, --debug              Log debugging info
-   -h, --host localhost     Specify redis server host
-   -p, --port 6379          Specify redis server port
-   -a, --auth pass          Authorize with redis server
+Options:
+  -h, --host   Redis hostname           [default: "localhost"]
+  -p, --port   Redis port               [default: "6379"]
+  -a, --auth   Authenticate with Redis
+  -d, --debug  Print debug information
 
-~ λ bolt-logge > bolt.log &
+````
 
-~ λtail -f bolt.log
+````bash
 
-~ λbolt-logger -d
+~ $ bolt-logger > bolt.log &
+
+~ $ tail -f bolt.log
+
+````
+
+````
+
+~ $ bolt-logger -d
 
 ````
 
