@@ -25,7 +25,6 @@ Options:
   -p, --port   Redis port               [default: "6379"]
   -a, --auth   Authenticate with Redis
   -d, --debug  Print debug information
-
 ````
 
 ````bash
@@ -33,13 +32,11 @@ Options:
 ~ $ bolt-logger > bolt.log &
 
 ~ $ tail -f bolt.log
-
 ````
 
-````
+````bash
 
 ~ $ bolt-logger -d
-
 ````
 
 # license
