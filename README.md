@@ -27,7 +27,6 @@ options:
    -p, --port 6379          Specify redis server port
    -a, --auth pass          Authorize with redis server
 
-
 ````
 
 # license
