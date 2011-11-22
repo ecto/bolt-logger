@@ -15,7 +15,7 @@ NOPE
 # usage
 
 ````bash
-~ λ bolt-loggr
+~ λ bolt-logger
 
 usage: bolt-logger <path> [options]
 
