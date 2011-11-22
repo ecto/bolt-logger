@@ -16,7 +16,7 @@ NOPE
 
 ````bash
 
-~ $ bolt-logger
+~ $ bolt-logger -h
 
 usage: bolt-logger [options]
 
