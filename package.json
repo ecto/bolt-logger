@@ -1,0 +1,22 @@
+{
+  "author": "Cam Pedersen <diffference@gmail.com> (http://campedersen.com/)",
+  "name": "bolt-logger",
+  "description": "simple logging for bolt",
+  "version": "0.0.0",
+  "homepage": "http://bolt.io/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ecto/bolt-logger.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bin": {
+    "bolt-logger": "bin/bolt-logger.js"
+  },
+  "dependencies": {
+    "optimist": "*",
+    "bolt": "*"
+  },
+  "devDependencies": {}
+}
