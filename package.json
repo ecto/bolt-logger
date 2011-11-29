@@ -2,7 +2,7 @@
   "author": "Cam Pedersen <diffference@gmail.com> (http://campedersen.com/)",
   "name": "bolt-logger",
   "description": "simple logging for bolt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://bolt.io/",
   "repository": {
     "type": "git",

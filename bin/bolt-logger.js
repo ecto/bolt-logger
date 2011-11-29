@@ -4,7 +4,7 @@
  * <cam@onswipe.com>
  */
 
-var version = 'v0.0.0';
+var version = 'v0.0.2';
 
 var optimist = require('optimist');
 
