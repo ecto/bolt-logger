@@ -21,10 +21,11 @@ NOPE
 usage: bolt-logger [options]
 
 Options:
-  -h, --host   Redis hostname           [default: "localhost"]
-  -p, --port   Redis port               [default: "6379"]
-  -a, --auth   Authenticate with Redis
-  -d, --debug  Print debug information
+  -h, --host     Redis hostname           [default: "localhost"]
+  -p, --port     Redis port               [default: "6379"]
+  -a, --auth     Authenticate with Redis
+  -c, --channel  Channel to listen on     [default: "bolt::main"]
+  -d, --debug    Print debug information
 ````
 
 ````bash
@@ -42,6 +43,11 @@ Options:
 ````bash
 
 ~ $ bolt-logger -d
+````
+
+````bash
+
+~ $ bolt-logger -c 'bolt::alternate'
 ````
 
 # license
