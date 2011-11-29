@@ -24,6 +24,11 @@ var argv = optimist
       alias: 'auth',
       describe: 'Authenticate with Redis'
     })
+    .options('c', {
+      alias: 'channel',
+      default: 'bolt::main',
+      describe: 'Channel to listen on'
+    })
     .options('d', {
       alias: 'debug',
       describe: 'Print debug information'
@@ -48,7 +53,8 @@ var options = {
   host: argv.h,
   port: argv.p,
   silent: !argv.d,
-  debug: argv.d
+  debug: argv.d,
+  channel: argv.c
 };
 
 if (argv.a) {
@@ -57,7 +63,6 @@ if (argv.a) {
 
 var bolt = require('bolt'),
     mesh = new bolt.Node(options);
-
 
 mesh.receive = function(that, channel, message){
   try {
